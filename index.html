@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="UTF--8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerkmann Studio – Design. Technik. Automatisierung.</title>
+    <meta name="description" content="Kerkmann Studio: Die Verbindung aus Design, Technik und System. Architektur, KI und Automatisierung für visuell, technisch und wirtschaftlich funktionierende Strukturen.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'anthracite': '#1A1A1A',
+              'copper': '#B87333',
+              'petrol': '#1F4C47',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            transitionTimingFunction: {
+                'out-quart': 'cubic-bezier(0.25, 1, 0.5, 1)',
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFFFF;
+        color: #1A1A1A;
+        font-family: 'Inter', sans-serif;
+      }
+      ::selection {
+        background-color: #B87333;
+        color: #FFFFFF;
+      }
+      /* Custom styles for reCAPTCHA badge to be visible on dark backgrounds */
+      .grecaptcha-badge {
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5) !important;
+        border-radius: 7px !important;
+        transition: all 0.3s ease !important;
+        bottom: 15px !important;
+        right: 15px !important;
+      }
+      .grecaptcha-badge:hover {
+        background-color: rgba(255, 255, 255, 0.15) !important;
+      }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Kerkmann Studio",
+          "url": "https://www.kerkmann-studio.de",
+          "email": "tim.kerkmann@googlemail.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "tim.kerkmann@googlemail.com",
+            "contactType": "customer support"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Tim Kerkmann",
+          "jobTitle": "Technischer Systemplaner, 3D-Künstler, Digitalarchitekt",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Kerkmann Studio"
+          },
+          "email": "mailto:tim.kerkmann@googlemail.com",
+          "knowsAbout": ["3D Visualization", "Architectural Rendering", "Artificial Intelligence", "Web Development", "Automation"]
+        }
+      ]
+    }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc0kvErAAAAALSlGHU8nDGmHsMqCZtLO23cl63z" async defer></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
